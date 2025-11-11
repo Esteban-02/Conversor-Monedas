@@ -16,16 +16,20 @@ El propósito principal de este desarrollo fue poner en práctica los conocimien
 * Trello → Herramienta de organización y seguimiento del progreso del proyecto.
 * JavaDocs → Referencia técnica para el uso de librerías como HttpClient, HttpRequest y otras clases relacionadas.
 
-## 🖼️ Imgenes
+## 🖼️ Imagenes
 
 * Estructura del proyecto
+
   ![Estructura del proyecto](img/Estructura%20del%20proyecto.png)
 
 * Ejemplos de ejecucion
+
 ![Ejemplo conversion](img/Ejemplo%201.png)
+
 ![Ejemplo conversion](img/Ejemplo%202.png)
 
 * Archivo JSON
+
 ![Archivo JSON generado](img/Archivo%20JSON.png)
 
 ## 🚀 Ejecución del Proyecto
