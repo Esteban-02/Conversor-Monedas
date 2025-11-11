@@ -1,2 +1,3 @@
-public record CambioMoneda(double conversion_result) {
+public record
+CambioMoneda(double conversion_result) {
 }

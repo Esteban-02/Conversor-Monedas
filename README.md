@@ -19,5 +19,19 @@ El propósito principal de este desarrollo fue poner en práctica los conocimien
 ## 🖼️ Imgenes
 
 * Estructura del proyecto
-  ![Estructura del proyecto](img
-  
+  ![Estructura del proyecto](img/Estructura%20del%20proyecto.png)
+
+* Ejemplos de ejecucion
+![Ejemplo conversion](img/Ejemplo%201.png)
+![Ejemplo conversion](img/Ejemplo%202.png)
+
+* Archivo JSON
+![Archivo JSON generado](img/Archivo%20JSON.png)
+
+## 🚀 Ejecución del Proyecto
+1. Clona el repositorio.
+2. Abre en IntelliJ.
+3. Ejecuta `Main.java`.
+
+## ✍️ Autor
+**Esteban Julian Ortega Tapie**
