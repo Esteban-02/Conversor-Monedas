@@ -7,13 +7,14 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("\tCasa de Cambio");
-
+        //Decalracion de la moneda base a la moneda de cambio
         String monedaBase = "";
         String monedaCambio = "";
 
         do{
             menu();
             int opcionMenu = lectura.nextInt();
+            // Opciones para el cambio de monedas segun la moneda base con la moneda a la que se va a cambiar
             switch (opcionMenu){
                 case 1:
                     monedaBase = "USD";
@@ -41,6 +42,7 @@ public class Main {
                     break;
                 case 7:
                     System.out.println("Regresa pronto!!");
+                    // Con return sale del bucle para terminar la ejecucion del codigo
                     return;
 
                 default:
@@ -54,15 +56,24 @@ public class Main {
             try {
                 ConsultaMoneda consultaMoneda = new ConsultaMoneda();
                 CambioMoneda moneda = consultaMoneda.cambio(monedaBase, monedaCambio, valor);
+
+                //Con este codigo se toma solamente el resultado para mostrarlo en consola, con subString e indexOf se ubica el = y el . como referencia para
+                //obtener solo el resultado
                 System.out.println("\nCambio de moneda: "+ String.valueOf(moneda).
                         substring(String.valueOf(moneda).indexOf("=")+1,
-                                String.valueOf(moneda).indexOf(".")+3));
+                                String.valueOf(moneda).indexOf(".")+3) + monedaCambio);
+
+                GeneradorJson generador = new GeneradorJson();
+                generador.guardarConversion(moneda, monedaBase, monedaCambio);
             }catch (RuntimeException e){
                 System.out.println(e.getMessage());
             }
-        }while (true);
+        }while (true); //Repite infinitas veces el menu hasta seleccionar el numero 7 que sale del bucle
     }
 
+    /**
+     * Este metodo contiene el menu que se mostrara para el cambio de monedas
+     */
     public static void menu(){
         System.out.print("""
                             
